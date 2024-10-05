@@ -7,7 +7,12 @@ export default function TodoItem(props) {
         <div className="col-6 ">{props.todoName}</div>
         <div className="col-4 ">{props.todoDate}</div>
         <div className="col-2">
-          <button type="button" className="btn btn-danger">
+          <button
+            name={props.name}
+            type="button"
+            className="btn btn-danger"
+            onClick={props.handleOnDel}
+          >
             Delete
           </button>
         </div>
