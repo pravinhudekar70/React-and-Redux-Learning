@@ -5,6 +5,7 @@ import FoodItems from "./components/FoodItems";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import "./App.css";
+import Container from "./components/Container";
 
 function App() {
   let foodList = [
@@ -20,11 +21,16 @@ function App() {
   // if (item.length === 0) return <h1> I am Still hungry</h1>;
 
   return (
-    <React.Fragment>
-      <Heading />
-      <ErrorMessage foodList={foodList} />
-      <FoodItems foodList={foodList} />
-    </React.Fragment>
+    <>
+      <Container>
+        <Heading />
+        <ErrorMessage foodList={foodList} />
+        <FoodItems foodList={foodList} />
+      </Container>
+      <Container>
+        <p>above list contains the healthy food list</p>
+      </Container>
+    </>
   );
 }
 
