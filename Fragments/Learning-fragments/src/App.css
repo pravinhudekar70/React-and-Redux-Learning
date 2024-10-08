@@ -1,0 +1,14 @@
+.inputFild {
+  width: 500px;
+  border-radius: 20px;
+  height: 50px;
+  margin: 16px;
+  background-color: cornsilk;
+  font-size: 20px;
+}
+.myHeading {
+  color: brown;
+}
+.clearAll {
+  margin-left: 240px;
+}
